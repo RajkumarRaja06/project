@@ -22,7 +22,6 @@ const Cart = () => {
           <img src={cartData.avatar} alt={cartData.first_name} />
         </div>
         <div className='tab'>
-          {/* <h3 className='cartName'>{cartData.first_name}</h3> */}
           <div className='cartText'>
             <h3 className='cartName'>{cartData.first_name}</h3>
             <div className='cartContent'>
@@ -47,10 +46,11 @@ const Cart = () => {
             </div>
           </div>
         </div>
-        {/* <div className='lap'>
+        <div className='lap'>
+          <h3 className='cartName'>{cartData.first_name}</h3>
           <div className='cartTextTab'>
-            <div>
-              <div className='cartContentTab'>
+            <div className='cartTextTab1'>
+              <div className='cartContent'>
                 <h4>Email</h4>
                 <p>{cartData.email}</p>
               </div>
@@ -59,9 +59,9 @@ const Cart = () => {
                 <p>Web Developer</p>
               </div>
             </div>
-            <div>
+            <div className='cartTextTab2'>
               <div className='cartContent'>
-                <h4>Location</h4>
+                <h4>Location : </h4>
                 <p>Coimbatore</p>
               </div>
               <div className='cartContent4'>
@@ -74,7 +74,7 @@ const Cart = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
